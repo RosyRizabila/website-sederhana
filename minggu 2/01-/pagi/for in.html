@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for in</title>
+</head>
+<body>
+    <script>
+        //pada objek
+        // const person = {
+        //    firstName: "Rosy",
+        //    middleName: "Rizabila",
+        //    lastName: "Septianisya" 
+        // }
+        // for (const property in person) {
+        //     console.log(`Property ${property}: ${person[property]}`);
+        // }
+
+        // pada array
+        // const names = ["Rosy", "Rizabila", "Septianisya"];
+
+        // for (const index in names) {
+        //     document.writeln(`<p>Index ${index}: ${names[index]}</p>`);
+        // }
+
+        //contoh latihan
+        const names = {
+            1: "tini", 
+            2: "tono", 
+            3: "toni", 
+            4: "tino"
+        }
+
+        for (const property in names) {
+            console.log(`${property}: ${names[property]}`);
+        }
+    </script>
+</body>
+</html>

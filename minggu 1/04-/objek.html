@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek</title>
+</head>
+<body>
+    <script>
+    //untuk objek dengan kurung kurawal
+    //ini yang pertama
+        const orang = {};
+        // menambah atau mengubah
+        orang["nama"]   = "Rosy Rizabila Septianisya";
+        orang["no_telp"] = "081993650873";
+        orang["alamat"] = "Indonesia";
+        orang["umur"]   = 20;
+
+        // // menghapus
+        // //delete orang["umur"];
+        // delete orang["alamat"];
+
+    //yang kedua
+        
+        // const orang = {
+        //     nama : "Rosy Rizabila Septianisya",
+        //     alamat : "Indonesia",
+        //     umur : 20
+        // };
+
+    // ubah property atau atribut
+        let person   = {}
+        person["nama"]    = "Rosy Rizabila Septianisya",
+        person["alamat"]  = "Indonesia",
+        person["no_telp"] = "081993650873"
+
+        console.info(`Nama : ${orang["nama"]}`);
+        console.info(`No.Telp : ${orang["no_telp"]}`);
+        console.info(`Alamat : ${orang.alamat}`);
+        console.info(`Umur : ${orang.umur}`);
+
+        console.table(person);
+        console.table(orang);
+    </script>
+</body>
+</html>

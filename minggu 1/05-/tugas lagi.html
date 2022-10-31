@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas</title>
+</head>
+<body>
+    <script>
+        const nama = prompt('Siapa Nama Kamu?');
+        const nilai = prompt('Berapa Nilai yang Kamu dapat?')
+
+        //nanti jika yang dimasukkan bukan angka hasilnya jadi ini
+        if( isNaN(nilai)){
+            alert(`jangan nakal ya ${nama} nilai yang kamu input tidak valid`)
+        // jika yang diinput angka keluar nya salah satu dari dibawah ini
+        } else if (nilai > 80){
+            document.writeln(`<p>Hi <b>${nama}</b>, nilaimu <b>${nilai}</b> jadi Good Job : A</p>`);
+        } else if (nilai > 70) {
+            document.writeln(`<p>Hi <b>${nama}</b>, nilaimu <b>${nilai}</b> jadi Good Job : B</p>`);
+        } else if (nilai > 60) {
+            document.writeln(`<p>Hi <b>${nama}</b>, nilaimu <b>${nilai}</b> jadi Good Job : C</p>`);
+        }
+    </script>
+</body>
+</html>

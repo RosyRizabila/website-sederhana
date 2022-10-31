@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+    //     //cara membuat function
+    //     function selamatPagi() {
+    //         document.writeln("<p>Selamat Pagi Rosy</p>");
+    //     }
+    //     //cara memanggil  fuction
+    //     selamatPagi(); // hasil outputnya : Selamat Pagi Rosy
+
+    //     function sayHello(){
+    //         document.writeln("<p>Assalamu'alaikum wr.wb, saya Rosy Rizabila Septianisya dari Kebumen</p>")
+    //     }
+    //     sayHello();
+    //     document.writeln("<br>Ini Saya<br><br>");
+    //     sayHello();
+    //     document.writeln("<br>Baik Hati dan tidak Sombong<br><br>");
+    //    // sayHello();
+
+    //     let firstName2  = prompt("Tulis Nama Depanmu");
+    //     let asal        = prompt("Tulis Kota Asalmu");
+
+    //     function sayHello(firstName, lastName, asal){
+    //         document.writeln(`<p>Assalamu'alaikum wr.wb, saya <b>${firstName} ${lastName}</b> asal dari ${asal}</p>`);
+    //    }
+    //    sayHello("Rosy", "Septianisya", "Kebumen");
+    //    document.writeln("<br>Ini Saya<br><br>");
+    //    sayHello("Renoe", "Wahid", "Sumenep");
+    //    document.writeln("<br>Ini Saya<br><br>");
+    //    sayHello("Derista", "Anisa", "Kebumen");
+    //    document.writeln("<br>Ini Saya<br><br>");
+    //    //sayHello("","",""); // ini jika tidak akan diisi
+
+    //menghitung luas lingkaran
+    // function luas(r) {
+    //     const phi = 3.14
+    //     L = phi * (r* r)
+    //     return L
+    // }
+
+    // let r = 7
+    // let luas_lingkaran = luas(r)
+    // console.log('Luas : '+luas_lingkaran)
+
+    //menghitung luas persegi panjang
+   
+
+    // // menghitung luas segitiga sama kaki
+    //     let alas = prompt("masukkan nilai alas");
+    //     let tinggi = prompt("masukkan nilai tinggi"); 
+
+    //     function luasSegitigaSamaKaki(alas2, tinggi2) {
+    //      if(isNaN(alas) || isNaN(tinggi)){
+    //      alert("yang anda input harus berupa angka");
+    //      }  else;
+    //         let hasil =(0.5 * alas2 * tinggi2);
+    //     document.writeln(`<p>luas segitiga yang mempunyai alas <br>${alas2} dan tinggi ${tinggi2} hasilnya adalah ${hasil}<p>`);
+    //     }
+    //     luasSegitigaSamaKaki(alas, tinggi);
+    //     document.writeln("<br>")
+    //     luasSegitigaSamaKaki(5, 13);
+
+    // // menghitung jajar genjang
+    //     function luasJajarGenjang(alas, tinggi) {
+    //         if(isNaN(alas) || isNaN(tinggi)){
+    //             alert("yang anda input harus berupa angka"); //jadi jika yang diinput bukan angka maka akan keluar ini
+    //         }else {
+    //             hitung = alas * tinggi;
+    //             document.writeln(`<p>Luas Jajar Genjang = <b>${hitung} <b></p>`);
+    //         }
+           
+    //     }
+    //     let inputalas = prompt("masukkan nilai alas")
+    //     let inputtinggi = prompt("masukkan nilai tinggi")
+
+    //     luasJajarGenjang(inputalas, inputtinggi);
+    //     document.writeln("<br>");
+    //     luasJajarGenjang(7, 5);
+
+    // //menghitung nilai siswa
+
+    //     function nilaiSiswa(nilai) {
+    //         if(nilai>90) {
+    //             return "A";
+
+    //         }else if (nilai >= 80) {
+    //             return "B";
+    //         }else if (nilai >= 70) {
+    //             return "C";
+    //         }else if (nilai >= 60){
+    //             return "D"
+    //         }else {
+    //             return "E";
+    //         }
+    //     }
+    //     let inputNilai  = prompt("masukkan nilai anda");
+    //     let hasil       = nilaiSiswa(inputNilai);
+    //     document.writeln(`Nilaimu adalah ${hasil}`);
+
+
+    //     function tambahAngka(nilai) {
+
+    //     }
+
+    function loopNilai(nilai1, nilai2) {
+        let hasilPerulangan = "";
+        nilai1 = parseInt(nilai1);
+        nilai2 = parseInt(nilai2);
+        for(nilai1; nilai1<=nilai2; nilai1++){
+           // if(nilai1%2===0) //untuk menampilkan angka genap
+            if(nilai1 % 2 != 0) // untuk menampilkan angka ganjil
+            //if(nilai1 %2 ==1) // ini juga bisa untuk angka ganjil
+            hasilPerulangan += ` ${nilai1}`;
+            console.log('ok');
+        }
+
+        return hasilPerulangan;
+    }
+    let nilai1 = prompt("masukkan nilai yang menjadi awalan");
+    let nilai2 = prompt("masukkan nilai yang menjadi akhiran");
+    let hasil = loopNilai(nilai1, nilai2);
+    document.writeln(`Hasilnya adalah : ${hasil}`);
+
+    </script>
+</body>
+</html>

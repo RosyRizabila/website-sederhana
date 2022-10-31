@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konversi String</title>
+</head>
+<body>
+    <script>
+        document.writeln(`<p>${parseInt("1.1")}</p>`); //1
+        document.writeln(`<p>${parseFloat("1.1")}</p>`); //1.1
+        document.writeln(`<p>${Number("1.1")}</p>`); //1
+
+
+        document.writeln(`<p>${parseInt("salah")}</p>`); // Na
+        document.writeln(`<p>${parseFloat("1.1 text")}</p>`); //1.1
+
+        // Number () tidak akan mentolelir kesalahan pada data
+        document.writeln(`<p>${Number("1.1 ups")}</p>`); //NaN
+        document.writeln(`<p>${Number("1X")}</p>`); //NaN
+        document.writeln(`<p>${Number("bukan number")}</p>`); // NaN
+        
+        // tanda , ataupun . tetap bida digunakan
+        document.writeln(`<p>${parseInt("1,1")}</p>`); //1
+
+        
+    </script>
+</body>
+</html>

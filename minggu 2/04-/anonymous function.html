@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Function</title>
+</head>
+<body>
+    <script>
+    const say = function (name) {
+        //console.info(`<p>Hello ${name}</p>`);
+        console.info(`Hello ${name}`); //bisa juga seperti ini
+        document.writeln(`<p>Hello ${name}</p>`);
+    }
+    say("Rosy");
+    say("Riza");
+    say("Bila");
+
+    // --------------------------------------------------
+
+    function giveMeName(callback) {
+        callback("Rosy");
+    }
+    giveMeName(say); 
+
+    //bisa juga seperti ini
+    giveMeName(function (name) {
+        document.writeln(`<p>Hello ${name}</p>`);
+    });
+    </script>
+</body>
+</html>

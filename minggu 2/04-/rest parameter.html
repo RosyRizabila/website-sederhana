@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+    <script>
+        function sum(name, ...rosy) {
+            let total = 0
+            for (const item of rosy) {
+                total += item;
+            }
+            console.info(`Total ${name} is ${total}`);
+        }
+
+        sum('Grape', 10, 20, 30, 40, 50, 60);
+        sum('Apple', 10, 20, 30, 40, 50, 60);
+        sum('Banana', 10, 20, 30, 40, 50, 60);
+
+        const values = [10,10,10,10,10];
+        sum("Test", ...values);
+
+        function oldSum(){
+            let total = 0;
+            for (const simpan of arguments) {
+                total += simpan;
+            }
+            document.writeln(`<p> Total is ${total}</p>`);
+        }
+        oldSum(1,2,3,4,5);
+
+        function sayHello(name) {
+            document.writeln(`<p>Hello ${name}</p>`);
+            console.info(`Hello ${name}`); //ini untuk menamplkan di console
+        }
+        sayHello("Rosy");
+        const say = sayHello;
+        const hi = say
+        say("Riza");
+
+        function giveMeName(callback) {
+            callback("Eko"); //sayHello("Eko");
+        }
+        giveMeName(sayHello);
+        giveMeName(say); //giveMeName(sayHello)
+        giveMeName(hi);
+    </script>
+</body>
+</html>
